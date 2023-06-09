@@ -1,0 +1,18 @@
+<!--{% block title %}评价Leave your comment{% endblock %}-->
+
+{% block breadcrumb %}
+<!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>评价Leave your comment</h1>
+        <form enctype="multipart/form-data" action="/comment/" method="post">
+        {% csrf_token %}
+        <input type="text" name="context" style="width: 600px;height:180px"></input>
+        <br/>
+        <input type="submit" value="评价">
+    </form>
+    </section>
+{% endblock %}
+
+<!--<h1>input</h1>-->
+
+
