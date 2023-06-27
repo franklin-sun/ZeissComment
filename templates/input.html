@@ -6,9 +6,14 @@
         <h1>评价Leave your comment</h1>
         <form enctype="multipart/form-data" action="/comment/" method="post">
         {% csrf_token %}
+            称呼 <input type="text" name="name"></input>
+            <br/>
+            <br/>
+            评论
+            <br/>
         <input type="text" name="context" style="width: 600px;height:180px"></input>
         <br/>
-        <input type="submit" value="评价">
+        <input type="submit" value="提交">
     </form>
     </section>
 {% endblock %}
