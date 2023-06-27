@@ -1,0 +1,43 @@
+<head>
+    <meta http-equiv="refresh" content="20">
+    <h1>最新评论：</h1>
+    <h2>{{comment1}}</h2>
+    <h2>{{comment2}}</h2>
+    <h2>{{comment3}}</h2>
+</head>
+<body>
+    {% csrf_token %}
+              {% load static %}
+    <img width="400" src="{% static "images/wordcloud_all.png" %}" alt="runoob-logo">
+</body>
+
+
+<!--{% block title %}评论分析展示{% endblock %}-->
+
+<!--{% block css %}-->
+<!--{% endblock %}-->
+
+<!--{% load static %}-->
+
+<!--{% block content %}-->
+<!--  &lt;!&ndash; Main content &ndash;&gt;-->
+<!--    {% csrf_token %}-->
+<!--    <h2>词云</h2>-->
+<!--              {% load static %}-->
+<!--    <div id="wordcloud" style="height:400px;">-->
+<!--    <img width="400" src="{% static "images/wordcloud_all.png" %}" alt="runoob-logo">-->
+<!--    </div>-->
+
+<!--    {% csrf_token %}-->
+<!--<h2>情感分析</h2>-->
+<!--    {% load static %}-->
+<!--    <div id="Emotion_Analyse" style="height:400px;">-->
+<!--            <img width="400"   src="{% static "images/Emotion_Analyses.png" %}" alt="runoob-logo">-->
+<!--    </div>-->
+
+<!--{% endblock %}-->
+
+<!--&lt;!&ndash;{% block script %}&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="https://cdn.bootcss.com/echarts/4.2.1/echarts.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="{% static 'adminlet-2.4.10/bower_components/jquery-knob/js/jquery.knob.js' %}"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;{% endblock %}&ndash;&gt;-->
